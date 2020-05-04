@@ -66,7 +66,7 @@ const BurgerBuilder = props => {
         let orderSummary = null;
         let burger = props.error ? <p>Ingredients can't be loaded!</p> : <Spinner />;
 
-        if ( .props.ings ) {
+        if ( props.ings ) {
             burger = (
                 <Aux>
                     <Burger ingredients={props.ings} />
